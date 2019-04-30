@@ -398,8 +398,8 @@ void draw() {
         playerMoveTimer = 0;
         playerHealth = playerHealth-1;
         for(int j=0; j<8; j++){
-          soilHealth[j][0] = 15;
-          println(soilHealth[1][0]);}
+          if(soilHealth[j][0]==0)soilHealth[j][0] = 15;
+        }
       }
     }
 		// Demo mode: Show the value of soilHealth on each soil
