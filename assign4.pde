@@ -397,8 +397,8 @@ void draw() {
         playerRow = (int) (playerY / SOIL_SIZE);
         playerMoveTimer = 0;
         playerHealth = playerHealth-1;
-        if(soilHealth[i][0]==0){
-          soilHealth[i][0] = 15;
+        for(int j=0; j<8; j++){
+          soilHealth[j][0] = 15;
           println(soilHealth[1][0]);}
       }
     }
