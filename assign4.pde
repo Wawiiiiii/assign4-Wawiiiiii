@@ -395,6 +395,7 @@ void draw() {
       if(playerX<soldierX[i]-80+80 && playerX+80>soldierX[i]-80 && playerY<soldierY[i]+80 && playerY+80>soldierY[i]){
         playerX = PLAYER_INIT_X;
 	playerY = PLAYER_INIT_Y;
+	playerCol = (int) (playerX / SOIL_SIZE);
         playerRow = (int) (playerY / SOIL_SIZE);
         playerMoveTimer = 0;
         playerHealth = playerHealth-1;
